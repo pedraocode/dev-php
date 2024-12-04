@@ -36,6 +36,7 @@
     justify-content: center;
     text-align: center;
     padding: 50px;
+    background-color: #1f1f1f; /* Cor de fundo sólida */
     color: #fff;
     z-index: 1;
 }
@@ -48,13 +49,16 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
 }
 
 .profile {
     position: relative;
     z-index: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile img {
@@ -63,6 +67,11 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+.pro {
+    margin-bottom: 20px; /* Espaçamento entre o texto e os botões */
+    width: 680px;
 }
 
 .buttons {
@@ -85,7 +94,7 @@
 }
 
 .ph {
-    width: 48px;
+    width: 72px;
     height: 27px;
     padding: 4px 12px;
     gap: 8px;
@@ -97,7 +106,7 @@
 }
 
 .cs {
-    width: 48px;
+    width: 72px;
     height: 27px;
     padding: 4px 12px;
     gap: 8px;
@@ -109,7 +118,7 @@
 }
 
 .ht {
-    width: 56px;
+    width: 72px;
     height: 27px;
     padding: 4px 12px;
     gap: 8px;
@@ -160,30 +169,51 @@ h2 {
 }
 
 .caixa {
-    width: 508px;
-    height: 180px;
+    width: 528px;
+    height: 200px; /* Aumentei a altura para acomodar os botões */
     padding: 12px;
     gap: 16px;
     border-radius: 12px;
     background: #292C34;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start; /* Alinhar itens no início para acomodar os botões */
 }
 
+.caixa2 {
+    width: 528px;
+    height: 215px; /* Aumentei a altura para acomodar os botões */
+    padding: 12px;
+    gap: 16px;
+    border-radius: 12px;
+    background: #292C34;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinhar itens no início para acomodar os botões */
+}
 .caixa img {
     width: 224px;
-    height: 156px;
+    height: 196px;
     border-radius: 8px;
 }
-
+.caixa2 img {
+    width: 224px;
+    height: 211px;
+    border-radius: 8px;
+}
+.caixa button {
+    color: black;
+}
+.caixa2 button {
+    color: black;
+}
 .text-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 10px;
     width: 244px;
-    height: 156px;
+    height: 180px; /* Aumentei a altura para acomodar os botões */
     padding: 8px 4px;
     justify-content: space-between;
 }
@@ -191,11 +221,13 @@ h2 {
 .buttons {
     display: flex;
     gap: 10px;
+    margin-top: 10px; /* Adicionado margem superior para espaçar dos textos */
 }
 
 .p {
-    width: 34px;
-    height: 18px;
+    width: 72px;
+    height: 27px;
+    padding: 4px 12px;
     gap: 8px;
     border-radius: 999px;
     background: #BB72E9;
@@ -205,8 +237,9 @@ h2 {
 }
 
 .c {
-    width: 34px;
-    height: 18px;
+    width: 72px;
+    height: 27px;
+    padding: 4px 12px;
     gap: 8px;
     border-radius: 999px;
     background: #3996DB;
@@ -216,8 +249,9 @@ h2 {
 }
 
 .h {
-    width: 40px;
-    height: 18px;
+    width: 72px;
+    height: 27px;
+    padding: 4px 12px;
     gap: 8px;
     border-radius: 999px;
     background: #E3646E;
@@ -227,8 +261,9 @@ h2 {
 }
 
 .jav {
-    width: 76px;
-    height: 18px;
+    width: 104px;
+    height: 27px;
+    padding: 4px 12px;
     gap: 8px;
     border-radius: 999px;
     background: #EABD5F;
@@ -238,10 +273,54 @@ h2 {
 }
 
 .meio {
-    background-color: rgb(21, 23, 28);
+    background-color: rgb(26, 27, 28);
     padding: 20px;
-    width: 1366px;
+    width: 1527px;
     height: 921px;
-    padding: 72px 120px 144px 120px;
+
     gap: 56px;
+}
+
+
+
+.pei {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+}
+
+
+.terceiro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1f1f1f; /* Cor de fundo sólida */
+    color: #fff;
+    z-index: 1;
+}
+
+.botoes button {
+    width: 400px;
+height: 68px;
+padding: 20px;
+gap: 12px;
+border-radius: 8px;
+opacity: 0px;
+background: #292C34;
+border: none;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
