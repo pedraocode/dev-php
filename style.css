@@ -6,6 +6,7 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #BB72E9; /* Cor do texto */
 }
 
 .prime {
@@ -16,16 +17,18 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #fff; /* Cor do texto */
 }
 
 .primer {
-    font-family:'Maven Pro';
+    font-family: 'Maven Pro';
     font-size: 14px;
     font-weight: 400;
     line-height: 19.6px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #fff; /* Cor do texto */
 }
 
 .primeiro {
@@ -142,7 +145,14 @@
 }
 
 .da {
-    color: #E3646E;
+    font-family: 'Asap';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E3646E; /* Cor do texto */
 }
 
 h2 {
@@ -153,6 +163,7 @@ h2 {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #fff; /* Cor do texto */
 }
 
 .container {
@@ -170,7 +181,7 @@ h2 {
 
 .caixa {
     width: 528px;
-    height: 200px; /* Aumentei a altura para acomodar os botões */
+    height: 215px; /* Aumentei a altura para acomodar os botões */
     padding: 12px;
     gap: 16px;
     border-radius: 12px;
@@ -191,22 +202,27 @@ h2 {
     flex-direction: row;
     align-items: flex-start; /* Alinhar itens no início para acomodar os botões */
 }
+
 .caixa img {
     width: 224px;
     height: 196px;
     border-radius: 8px;
 }
+
 .caixa2 img {
     width: 224px;
     height: 211px;
     border-radius: 8px;
 }
+
 .caixa button {
     color: black;
 }
+
 .caixa2 button {
     color: black;
 }
+
 .text-container {
     display: flex;
     flex-direction: column;
@@ -216,6 +232,16 @@ h2 {
     height: 180px; /* Aumentei a altura para acomodar os botões */
     padding: 8px 4px;
     justify-content: space-between;
+}
+
+.text-container h3 {
+    font-family: 'Asap';
+    color: #fff; /* Cor do título */
+}
+
+.text-container p {
+    font-family: 'Maven Pro';
+    color: #fff; /* Cor do parágrafo */
 }
 
 .buttons {
@@ -277,11 +303,8 @@ h2 {
     padding: 20px;
     width: 1527px;
     height: 921px;
-
     gap: 56px;
 }
-
-
 
 .pei {
     position: absolute;
@@ -293,7 +316,6 @@ h2 {
     z-index: -1;
     opacity: 0.3; /* Ajuste a opacidade conforme necessário */
 }
-
 
 .terceiro {
     position: relative;
@@ -308,19 +330,60 @@ h2 {
     z-index: 1;
 }
 
-.botoes button {
-    width: 400px;
-height: 68px;
-padding: 20px;
-gap: 12px;
-border-radius: 8px;
-opacity: 0px;
-background: #292C34;
-border: none;
+.terceiro h3 {
+    font-family: 'Asap';
+    color: #BB72E9; /* Cor do título */
+}
+
+.terceiro h1 {
+    font-family: 'Asap';
+    color: #fff; /* Cor do título */
+}
+
+.terceiro p {
+    font-family: 'Maven Pro';
+    color: #fff; /* Cor do parágrafo */
 }
 
 .botoes {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.botoes button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #292C34;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Maven Pro';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button-content img:first-child {
+    margin-right: 10px;
+}
+
+.button-content img:last-child {
+    margin-left: auto;
+}
+
+.button-content span {
+    flex-grow: 1;
+    text-align: center;
 }
