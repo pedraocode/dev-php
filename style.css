@@ -6,7 +6,7 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #BB72E9; /* Cor do texto */
+    color: #C0C4CE;
 }
 
 .prime {
@@ -28,7 +28,7 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #fff; /* Cor do texto */
+    color: #878EA1;
 }
 
 .primeiro {
@@ -145,10 +145,10 @@
 }
 
 .da {
-    font-family: 'Asap';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -241,7 +241,7 @@ h2 {
 
 .text-container p {
     font-family: 'Maven Pro';
-    color: #fff; /* Cor do parágrafo */
+    color: #C0C4CE;
 }
 
 .buttons {
@@ -301,8 +301,8 @@ h2 {
 .meio {
     background-color: rgb(26, 27, 28);
     padding: 20px;
-    width: 1527px;
-    height: 921px;
+    max-width: 1527px;
+    max-height:auto;
     gap: 56px;
 }
 
@@ -348,6 +348,7 @@ h2 {
 .botoes {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 100%;
     max-width: 600px;
@@ -366,24 +367,75 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.button-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+.linkedin-button {
+    background-image: url('LinkedinLogo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px 30px;
+    padding-left: 50px; /* Ajuste conforme necessário */
 }
 
-.button-content img:first-child {
+.linkedin-button span {
+    margin-left: 10px; /* Ajuste conforme necessário */
+}
+
+.instagram-button img {
     margin-right: 10px;
 }
 
-.button-content img:last-child {
+.github-button img {
+    margin-right: 10px;
+}
+
+.email-button img {
+    margin-right: 10px;
+}
+
+.botoes button img:last-child {
     margin-left: auto;
 }
 
-.button-content span {
-    flex-grow: 1;
-    text-align: center;
+.daf {
+    color: #E3646E;
+}
+
+/* Media Queries para responsividade */
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .caixa, .caixa2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .primeiro, .meio, .terceiro {
+        padding: 20px;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
 }
