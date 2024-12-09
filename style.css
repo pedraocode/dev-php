@@ -416,7 +416,7 @@ h2 {
     }
 
     .caixa, .caixa2 {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -430,12 +430,157 @@ h2 {
     }
 
     .buttons {
-        flex-direction: column;
+    
         align-items: center;
     }
 
     .botoes {
-        flex-direction: column;
+      
         align-items: center;
     }
 }
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .caixa, .caixa2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .primeiro, .meio, .terceiro {
+        padding: 20px;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .buttons {
+       
+        align-items: center;
+    }
+
+    .botoes {
+       
+        align-items: center;
+    }
+
+    .text-container h3 {
+        font-size: 16px; /* Ajuste o tamanho da fonte para títulos menores */
+    }
+
+    .text-container p {
+        font-size: 12px; /* Ajuste o tamanho da fonte para parágrafos menores */
+    }
+
+    .git, .ph, .cs, .ht, .java, .p, .c, .h, .jav {
+        width: 100%;
+        font-size: 10px; /* Ajuste o tamanho da fonte para botões menores */
+    }
+}
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: row; /* Mantém os botões alinhados horizontalmente */
+      
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .primeiro, .meio, .terceiro {
+        padding: 20px;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .buttons {
+    
+        align-items: center;
+    }
+
+    .botoes {
+      
+        align-items: center;
+    }
+
+    .text-container h3 {
+        font-size: 16px; /* Ajuste o tamanho da fonte para títulos menores */
+    }
+
+    .text-container p {
+        font-size: 12px; /* Ajuste o tamanho da fonte para parágrafos menores */
+    }
+
+    .git, .ph, .cs, .ht, .java, .p, .c, .h, .jav {
+        width: 100%;
+        font-size: 10px; /* Ajuste o tamanho da fonte para botões menores */
+    }
+}
+@media (max-width: 768px) {
+    .caixa, .caixa2 {
+        flex-direction: column; /* Organizar em coluna */
+        height: auto; /* Permitir altura dinâmica */
+        padding: 12px;
+    }
+
+    .text-container h3 {
+        font-size: 1rem; /* Reduzir tamanho do título */
+    }
+
+    .text-container p {
+        font-size: 0.8rem; /* Reduzir tamanho do texto */
+    }
+
+    .buttons {
+        gap: 6px; /* Menor espaçamento entre botões */
+        margin-right: 10px;
+    }
+
+    .buttons button {
+        font-size: 0.7rem; /* Fonte menor nos botões */
+        padding: 6px; /* Reduzir padding */
+    }
+    .caixa img {
+        width: 100%;
+    }
+    .caixa2 img {
+        width: 100%;
+    }
+    .text-container {
+       justify-content: center;
+  margin-left: -5px
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
