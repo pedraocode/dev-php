@@ -301,7 +301,7 @@ h2 {
 .meio {
     background-color: rgb(26, 27, 28);
     padding: 20px;
-    max-width: 1527px;
+    max-width: 100%;
     max-height:auto;
     gap: 56px;
 }
